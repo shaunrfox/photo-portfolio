@@ -1,0 +1,21 @@
+{
+  "name": "shaun-fox-photos",
+  "version": "1.0.0",
+  "homepage": "dunno",
+  "authors": [
+    "Shaun Fox"
+  ],
+  "description": "My Photo Portfolio",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/svg"
+  ],
+  "dependencies": {
+    "bricks.js": "^1.8.0",
+    "fox-icons": "*"
+  }
+}
