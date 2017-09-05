@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-03-25
+
+title: "Fishing at dusk, Groesbeck, Texas"
+base-path: "/assets/img/photos/scenes"
+image-name: "groesbeck-2"
+---

@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-05-25
+
+title: "Scoping out the land for hunting, Muenster, Texas"
+base-path: "/assets/img/photos/scenes"
+image-name: "hunting-1"
+---

@@ -15,7 +15,7 @@
     "assets/svg"
   ],
   "dependencies": {
-    "bricks.js": "^1.8.0",
-    "fox-icons": "*"
+    "fox-icons": "*",
+    "masonry-layout": "^4.2.0"
   }
 }

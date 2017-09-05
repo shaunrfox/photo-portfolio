@@ -1,9 +1,0 @@
----
-layout: post
-categories: photos
-date: 2015-01-07
-
-title: "Flower"
-base-path: "/assets/img/photos/details"
-image-name: "flower"
----

@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-03-15
+
+title: "Pidgeon Portrait"
+base-path: "/assets/img/photos/details"
+image-name: "pidgeon-1"
+---

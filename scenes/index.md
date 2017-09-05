@@ -1,13 +1,13 @@
 ---
 layout: default
-page-title: "I shoot photos, too."
+page-title: "Places I've seen"
 ---
 
 <section class="gallery-wrapper">
 	<div class="container photos">
-		<div class="bricks">
+		<div class="grid">
 			{% for post in site.categories.scenes %}
-				<a class="gallery-photo item" href="{{ post.url }}">
+				<a class="gallery-photo" href="{{ post.url }}">
 					<img src="{{ post.base-path }}/{{ post.image-name }}-sm.jpg" alt="">
 				</a>
 			{% endfor %}

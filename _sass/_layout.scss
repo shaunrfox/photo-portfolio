@@ -3,15 +3,17 @@
 // Media Queries
 @mixin breakpoint($point) {
 	@if $point == extra-large {
-		@media (min-width: 1200px) { @content; }
+		@media (max-width: 1200px) { @content; }
 	} @else if $point == large {
-		@media (min-width: 1000px) { @content; }
+		@media (max-width: 1000px) { @content; }
 	} @else if $point == medium {
-		@media (min-width: 800px) { @content; }
+		@media (max-width: 800px) { @content; }
 	} @else if $point == medium-step {
-		@media (min-width: 600px) { @content; }
+		@media (max-width: 600px) { @content; }
 	} @else if $point == small {
-		@media (min-width: 400px)  { @content; }
+		@media (max-width: 400px)  { @content; }
+	} @else if $point == dang-small {
+		@media (max-width: 380px)  { @content; }
 	}
 }
 
@@ -47,11 +49,15 @@
 	position: relative;
 	display: block;
 	width: 100%;
-	max-width: 1800px;
+	max-width: 1600px;
 	height: auto;
 	margin: 0 auto;
 	@include clearfix();
 	padding: 0 15px;
+
+	&.photos {
+		padding: 0 25px;
+	}
 }
 
 .column {
@@ -61,31 +67,54 @@
 	@include clearfix();
 }
 
-.bricks {
-	width: 100%;
+.gallery-wrapper {
+	margin-top: -5px;
+}
 
-	.item {
+.grid {
+	width: 100%;
+	@include clearfix();
+	padding-bottom: 50px;
+
+	.gallery-photo {
 		display: block;
 		float: left;
-		width: 100%;
+		width: percentage(1/3);
 		height: auto;
+		padding: 5px;
 
 		img {
 			width: 100%;
 			height: auto;
-		}
-
-		img {
-			width: 100%;
-			height: auto;
-		}
-
-		@include breakpoint(medium) {
-			width: 50%;
+			margin-bottom: -4px;
 		}
 
 		@include breakpoint(extra-large) {
-			width: percentage(1/3);
+			width: 50%;
+		}
+
+		@include breakpoint(medium) {
+			width: 100%;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			bottom: 5px;
+			left: 5px;
+			background: rgba($blue, 0);
+			transition: 300ms ease all;
+		}
+
+		&:hover {
+			position: relative;
+			border: none;
+
+			&:before {
+				background: rgba($blue, .4);
+			}
 		}
 	}
 }

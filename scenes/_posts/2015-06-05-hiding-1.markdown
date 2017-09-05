@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-06-05
+
+title: "Hiding from the party, Lubbock, Texas"
+base-path: "/assets/img/photos/scenes"
+image-name: "hiding-1"
+---

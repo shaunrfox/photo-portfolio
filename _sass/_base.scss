@@ -42,7 +42,7 @@ h2 {
 h3 { @include font-size(1.2); }
 
 p {
-	@include rooney();
+	@include chaparral();
 	font-weight: 400;
 	@include font-size(2.4);
 	line-height: 1.5em;
@@ -56,7 +56,7 @@ p {
 }
 
 blockquote {
-	@include rooney();
+	@include chaparral();
 	@include font-size(2.5);
 	font-style: italic;
 	margin-bottom: 25px;

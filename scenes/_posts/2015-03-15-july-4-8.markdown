@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-03-15
+
+title: "Pug in the shade after the fourth of July parade, Austin, Texas"
+base-path: "/assets/img/photos/scenes"
+image-name: "july-4-8"
+---

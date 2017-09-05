@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-02-15
+
+title: "Fishing lessons, Groesbeck, Texas"
+base-path: "/assets/img/photos/scenes"
+image-name: "groesbeck-1"
+---
