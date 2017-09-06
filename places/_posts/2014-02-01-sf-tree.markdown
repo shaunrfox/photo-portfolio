@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2014-02-01
+
+title: "Pine tree in San Francisco, California"
+base-path: "/assets/img/photos/places"
+image-name: "sf-tree"
+---

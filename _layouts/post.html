@@ -1,16 +1,24 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-  </header>
+  {% if page.next.url %}
+    <a href="{{page.next.url}}" title="Previous: {{page.next.title}}" class="post-nav next">
+			<svg viewBox="0 0 30 30" class="ico-pointer-left">
+				<use xlink:href="#ico-pointer-left"></use>
+			</svg>
+		</a>
+  {% endif %}
 
-  <div class="post-content" itemprop="articleBody">
-    <div class="post-image-wrapper">
-    	<img src="{{ page.base-path }}/{{ page.image-name }}.jpg" alt="{{ page.title }}">
-    </div>
-  </div>
+  {% if page.previous.url %}
+    <a href="{{page.previous.url}}" title="Next: {{page.previous.title}}" class="post-nav previous">
+			<svg viewBox="0 0 30 30" class="ico-pointer-right">
+				<use xlink:href="#ico-pointer-right"></use>
+			</svg>
+		</a>
+  {% endif %}
 
-</article>
+  <div class="post-image" style="background-image:url('{{ page.base-path }}/{{ page.image-name }}.jpg')"></div>
+
+</div>

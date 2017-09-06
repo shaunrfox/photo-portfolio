@@ -3,19 +3,15 @@
 <div class="site-header">
 	<div class="container">
 		<div class="column nav-column">
-			<div class="main-title">{{ site.title }}</div>
+			<div class="main-title"><a href="/" class="logo">{{ site.title }}</a>{% if page.title %}<span class="page-title"> / {{ page.title }}</span>{% endif %}</div>
 
 			<nav>
-			  <a href="/" {% if (current[1] == 'home') or (page.url == "/") %} class="active" {% endif %}>Home</a>
 			  <a href="/people" {% if (current[1] == 'people') %} class="active" {% endif %}>People</a>
 			  <a href="/places" {% if (current[1] == 'places') %} class="active" {% endif %}>Places</a>
 			  <a href="/scenes" {% if (current[1] == 'scenes') %} class="active" {% endif %}>Scenes</a>
 			  <a href="/details" {% if (current[1] == 'details') %} class="active" {% endif %}>Details</a>
-			  <a href="/about" {% if (current[1] == 'about') %} class="active" {% endif %}>About</a>
+			  <!-- <a href="/about" {% if (current[1] == 'about') %} class="active" {% endif %}>About</a> -->
 			</nav>
     </div>
   </div>
 </div>
-
-
-<!-- <div class="breakpoint-tester"></div> -->

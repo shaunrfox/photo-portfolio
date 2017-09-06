@@ -1,0 +1,72 @@
+/*
+
+Post Styles
+
+*/
+
+.post {
+	position: absolute;
+	top: $header-height;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: $off-white;
+
+	.post-image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+}
+
+$post-nav-size: 40px;
+
+.post-nav {
+	position: absolute;
+	display: block;
+	width: 50%;
+	height: 100%;
+	z-index: 100;
+	transition: ease all 300ms;
+
+	> svg {
+		@include vertical-align();
+		position: absolute;
+		width: $post-nav-size;
+		height: $post-nav-size;
+		fill: $off-black;
+		background: rgba($white, .6);
+		border-radius: $post-nav-size;
+		transition: ease all 300ms;
+	}
+
+	&.next {
+		left: 0;
+
+		> svg {
+			left: 30px;
+		}
+	}
+
+	&.previous {
+		right: 0;
+
+		> svg {
+			right: 30px;
+		}
+	}
+
+	&:hover {
+		border: none;
+
+		> svg {
+			background: $white;
+			fill: $cyan;
+		}
+	}
+}

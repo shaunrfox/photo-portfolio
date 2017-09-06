@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2016-04-25
+
+title: "American flag on a wall in Chinatown – San Francisco, California"
+base-path: "/assets/img/photos/details"
+image-name: "sf-flag"
+---

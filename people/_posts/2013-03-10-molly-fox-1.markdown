@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-03-10
+
+title: "Swaddled Molly, Austin, Texas"
+base-path: "/assets/img/photos/people"
+image-name: "molly-fox-1"
+---

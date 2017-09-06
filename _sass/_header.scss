@@ -1,5 +1,7 @@
 /*~~~~~~~~~~~ Navigation ~~~~~~~~~~~~~~*/
 
+$header-height: 50px;
+
 .site-header {
 	position: relative;
 	width:100%;
@@ -12,13 +14,22 @@
 }
 
 .main-title {
-	// @include chaparral();
 	float: left;
 	@include font-size(2);
 	margin-right: 20px;
-	height: 40px;
-	line-height: 40px;
+	height: $header-height;
+	line-height: $header-height;
 	color: $off-black;
+
+	.logo {
+		color: $off-black;
+		transition: 300ms ease all;
+
+		&:hover {
+			border: none;
+			color: $cyan;
+		}
+	}
 
 	// @include breakpoint(large) {
 	// 	@include font-size(5.2);
@@ -39,8 +50,8 @@ nav {
 		position: relative;
 		float: left;
 		margin-left: 20px;
-		height: 40px;
-		line-height: 40px;
+		height: $header-height;
+		line-height: $header-height;
 		color: $mid-grey;
 	 	@include uppercase();
 	 	@include font-size(1.4);
@@ -56,11 +67,6 @@ nav {
 }
 
 .page-title {
-	font-weight: 400;
-	margin: 50px 0;
-	width: percentage(2/3);
-
-	@include breakpoint(medium) {
-		width: 100%;
-	}
+	@include chaparral();
+	color: $mid-grey;
 }

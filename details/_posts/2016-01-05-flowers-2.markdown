@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2016-01-05
+
+title: "Flowers in the dark, Austin, Texas"
+base-path: "/assets/img/photos/details"
+image-name: "flowers-2"
+---

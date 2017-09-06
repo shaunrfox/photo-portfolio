@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2014-02-15
+
+title: "Little hill in Big Bend National Park, Texas"
+base-path: "/assets/img/photos/places"
+image-name: "big-bend-2"
+---

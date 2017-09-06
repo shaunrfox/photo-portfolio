@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-01-01
+
+title: "Jeremy, my youngest brother, on a cruise ship"
+base-path: "/assets/img/photos/people"
+image-name: "jeremy-fox-2"
+---

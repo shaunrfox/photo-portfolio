@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-02-15
+
+title: "Luisa, prepared for the loud fireworks, Austin, Texas"
+base-path: "/assets/img/photos/people"
+image-name: "july-4-2"
+---

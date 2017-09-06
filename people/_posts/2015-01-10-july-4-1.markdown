@@ -1,9 +1,0 @@
----
-layout: post
-categories: photos
-date: 2015-01-10
-
-title: "Luisa waiting for fireworks, Austin, Texas"
-base-path: "/assets/img/photos/people"
-image-name: "july-4-1"
----
