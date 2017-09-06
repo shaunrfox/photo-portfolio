@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Places I've seen"
+title: "Something going down"
 ---
 
 <section class="gallery-wrapper">

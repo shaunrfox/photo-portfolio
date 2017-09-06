@@ -1,0 +1,28 @@
+/*~~~~~~~~~~~ Navigation ~~~~~~~~~~~~~~*/
+
+$footer-height: 50px;
+
+.site-footer {
+	width: 100%;
+	height: $footer-height;
+	line-height: $footer-height;
+	background: $off-white;
+
+	&.post-page-footer {
+		background: rgba($white, .2);
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		.copyright {
+			color: $dark-grey;
+		}
+	}
+}
+
+.copyright {
+	text-align: center;
+	@include font-size(1.2);
+	color: $mid-grey;
+}

@@ -8,16 +8,21 @@ Post Styles
 	position: absolute;
 	top: $header-height;
 	right: 0;
-	bottom: 0;
+	bottom: $footer-height;
 	left: 0;
 	background: $off-white;
 
 	.post-image {
+		@include vertical-align();
 		position: absolute;
-		top: 0;
+		// top: 0;
 		right: 0;
-		bottom: 0;
+		// bottom: 0;
 		left: 0;
+		max-width: 1540px; // computed width of header stuff
+		max-height: 1540px;
+		height: 100%;
+		margin: 0 auto;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: contain;

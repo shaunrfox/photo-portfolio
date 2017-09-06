@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Detail shots"
+title: "Close-ups and observations"
 ---
 
 <section class="gallery-wrapper">
