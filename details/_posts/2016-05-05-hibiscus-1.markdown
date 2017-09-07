@@ -1,9 +1,0 @@
----
-layout: post
-categories: photos
-date: 2016-05-05
-
-title: "Hibiscus in the dark, Austin Texas"
-base-path: "/assets/img/photos/details"
-image-name: "hibiscus-1"
----

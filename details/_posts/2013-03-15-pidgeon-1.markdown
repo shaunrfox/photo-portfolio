@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-03-15
+
+title: "Pidgeon Portrait, Austin, Texas"
+base-path: "/assets/img/photos/details"
+image-name: "pidgeon-1"
+---

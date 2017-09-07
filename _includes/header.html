@@ -1,17 +1,35 @@
 {% assign current = page.url | downcase | split: '/' %}
 
-<div class="site-header">
+<div class="site-header {% if page.url == '/') %} home-header {% endif %}">
 	<div class="container">
 		<div class="column nav-column">
-			<div class="main-title"><a href="{{ site.baseurl }}" class="logo">{{ site.title }}</a>{% if page.title %}<span class="page-title"> / {{ page.title }}</span>{% endif %}</div>
+			<div class="main-title">
+				<a href="{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
+				<a href="{{ site.baseurl }}/" class="actual-logo"><img src="{{ site.baseurl}}/assets/img/shaun-fox-logo.gif"></a>
+				{% if page.title %}<span class="slash"> /</span>{% endif %}
+				{% if page.title %}<span class="page-title"> {{ page.title }}</span>{% endif %}
+			</div>
 
-			<nav>
+			<div class="hamburger-menu" id="toggleNav">
+				<svg viewBox="0 0 30 30" class="ico-hamburger">
+				  <use xlink:href="#ico-hamburger"></use>
+				</svg>
+			</div>
+
+			<nav id="navigation">
+				<a href="{{ site.baseurl }}/" class="home-link {% if page.url == '/') %} active {% endif %}">Home</a>
 			  <a href="{{ site.baseurl }}/people" {% if (current[1] == 'people') %} class="active" {% endif %}>People</a>
 			  <a href="{{ site.baseurl }}/places" {% if (current[1] == 'places') %} class="active" {% endif %}>Places</a>
 			  <a href="{{ site.baseurl }}/scenes" {% if (current[1] == 'scenes') %} class="active" {% endif %}>Scenes</a>
 			  <a href="{{ site.baseurl }}/details" {% if (current[1] == 'details') %} class="active" {% endif %}>Details</a>
-			  <!-- <a href="{{ site.baseurl }}/about" {% if (current[1] == 'about') %} class="active" {% endif %}>About</a> -->
+			  <a href="{{ site.baseurl }}/about" {% if (current[1] == 'about') %} class="active" {% endif %}>About</a>
 			</nav>
     </div>
   </div>
+</div>
+
+<div class="container">
+	<div class="column">
+		<div class="page-title-small-pages" {% if page.url == '/') %} style="display: none;" {% endif %}>{{ page.title }}</div>
+	</div>
 </div>

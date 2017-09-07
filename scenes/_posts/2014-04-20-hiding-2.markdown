@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2014-04-20
+
+title: "Texas-size wooden playground, Lubbock, Texas"
+base-path: "/assets/img/photos/scenes"
+image-name: "hiding-2"
+---

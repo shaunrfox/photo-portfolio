@@ -1,9 +1,0 @@
----
-layout: post
-categories: photos
-date: 2015-09-15
-
-title: "Sidewalk pedestrian, New York City, New York"
-base-path: "/assets/img/photos/scenes"
-image-name: "nyc-ped-3"
----

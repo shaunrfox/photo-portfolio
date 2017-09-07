@@ -1,9 +1,0 @@
----
-layout: post
-categories: photos
-date: 2015-03-05
-
-title: "The Metropolitan Museum of Art, New York City, New York"
-base-path: "/assets/img/photos/scenes"
-image-name: "the-met"
----

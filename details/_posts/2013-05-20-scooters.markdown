@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-05-20
+
+title: "A pair of scooters in Rehoboth Beach, Delaware"
+base-path: "/assets/img/photos/details"
+image-name: "scooters"
+---

@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-01-15
+
+title: "Flower detail, Austin, Texas"
+base-path: "/assets/img/photos/details"
+image-name: "flower"
+---

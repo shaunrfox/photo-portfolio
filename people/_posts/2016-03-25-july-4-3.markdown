@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2016-03-25
+
+title: "Molly just before the fireworks, Austin, Texas"
+base-path: "/assets/img/photos/people"
+image-name: "july-4-3"
+---

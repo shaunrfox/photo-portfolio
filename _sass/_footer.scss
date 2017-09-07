@@ -8,8 +8,8 @@ $footer-height: 50px;
 	line-height: $footer-height;
 	background: $off-white;
 
-	&.post-page-footer {
-		background: rgba($white, .2);
+	&.fixed-footer {
+		background: rgba($white, .6);
 		position: fixed;
 		left: 0;
 		right: 0;
@@ -19,10 +19,22 @@ $footer-height: 50px;
 			color: $dark-grey;
 		}
 	}
+
+	&.home-footer {
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: none;
+
+		.copyright {
+			color: $off-black;
+		}
+	}
 }
 
 .copyright {
 	text-align: center;
-	@include font-size(1.2);
+	@include font-size(1.4);
 	color: $mid-grey;
 }

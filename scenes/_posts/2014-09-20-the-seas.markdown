@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2014-09-20
+
+title: "The Seas playing at The Parlor pizza house, Austin, Texas"
+base-path: "/assets/img/photos/scenes"
+image-name: "the-seas"
+---

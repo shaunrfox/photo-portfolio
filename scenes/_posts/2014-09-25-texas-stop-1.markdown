@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2014-09-25
+
+title: "Hot food at a truck stop, Texas"
+base-path: "/assets/img/photos/scenes"
+image-name: "texas-stop-1"
+---

@@ -11,6 +11,17 @@ $header-height: 50px;
 	padding: 0;
 	@include clearfix();
 	@include breakpoint(medium) { padding-bottom: 0;}
+
+	&.home-header {
+		.logo,
+		nav a {
+			color: rgba($white, .8);
+
+			&:hover {
+				color: $cyan;
+			}
+		}
+	}
 }
 
 .main-title {
@@ -31,13 +42,46 @@ $header-height: 50px;
 		}
 	}
 
-	// @include breakpoint(large) {
-	// 	@include font-size(5.2);
-	// }
+	.actual-logo {
+		position: relative;
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin: 5px 10px 5px 0;
+		border: 1px solid transparent;
+		border-radius: 40px;
+		display: none;
 
-	// @include breakpoint(medium) {
-	// 	@include font-size(4.5);
-	// }
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			border-radius: 40px;
+			background: rgba($cyan, .1);
+			display: none;
+		}
+
+		&:hover {
+			border: 1px solid $cyan;
+
+			&:before {
+				display: block;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		.logo { display: none; }
+		.actual-logo { display: block; }
+	}
 }
 
 nav {
@@ -58,6 +102,10 @@ nav {
 		border: none;
 		@include transition(200ms ease all);
 
+		&.home-link {
+			display: none;
+		}
+
 	 	&.active,
 		&:hover {
 			color: $cyan;
@@ -66,7 +114,124 @@ nav {
  	}
 }
 
-.page-title {
+@include breakpoint(medium) {
+	nav {
+		position: absolute;
+		top: $header-height;
+		right: 30px;
+		width: 150px;
+		height: auto;
+		@include clearfix();
+		background: $white;
+		box-shadow: 0 2px 3px rgba($off-black, .4);
+		z-index: 100;
+		margin-top: -5px;
+		border: 1px solid $off-white;
+		margin-right: -200px;
+		transition: ease all 300ms;
+
+		&.nav-open {
+			margin-right: 0;
+		}
+
+		a {
+			width: 100%;
+			height: 40px;
+			margin: 0;
+			line-height: 40px;
+			padding: 0 15px;
+
+			&.active {
+				background: rgba($cyan, .3)
+			}
+		}
+	}
+
+	.site-header.home-header {
+		nav a {
+			color: $off-black;
+		}
+
+		.hamburger-menu {
+			svg {
+				fill: rgba($white, .8);
+			}
+
+			&.hamburger-clicked {
+				svg {
+					fill: $off-black;
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint(small) {
+	nav a.home-link {
+		display: block;
+	}
+}
+
+.page-title,
+.slash {
 	@include chaparral();
 	color: $mid-grey;
+}
+
+.page-title-small-pages {
+	position: relative;
+	float: left;
+	color: $off-black;
+	padding: 10px;
+	margin-bottom: 10px;
+	background: rgba($white, .6);
+	height: auto;
+	z-index: 10;
+	@include font-size(1.4);
+	line-height: 1em;
+	display: none;
+}
+
+@include breakpoint(extra-large) {
+	.slash,
+	.page-title { display: none; }
+
+	.page-title-small-pages {
+		display: block;
+	}
+}
+
+$hamburger-size: 40px;
+
+.hamburger-menu {
+	position: relative;
+	float: right;
+	width: $hamburger-size;
+	height: $hamburger-size;
+	margin: 5px 0;
+	display: none;
+	z-index: 100;
+
+	svg {
+		width: $hamburger-size;
+		height: $hamburger-size;
+		fill: rgba($off-black, .7);
+	}
+
+	&:hover {
+		cursor: pointer;
+		background: rgba($white, .3);
+
+		svg {
+			fill: $off-black;
+		}
+	}
+
+	&.hamburger-clicked {
+		background: $white;
+	}
+
+	@include breakpoint(medium) {
+		display: block;
+	}
 }
