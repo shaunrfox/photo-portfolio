@@ -12,12 +12,14 @@ Post Styles
 	left: 0;
 	background: $off-white;
 
+	@include breakpoint(extra-large) {
+		bottom: 30px;
+	}
+
 	.post-image {
 		@include vertical-align();
 		position: absolute;
-		// top: 0;
 		right: 0;
-		// bottom: 0;
 		left: 0;
 		max-width: 1540px; // computed width of header stuff
 		max-height: 1540px;
@@ -64,6 +66,20 @@ $post-nav-size: 40px;
 		> svg {
 			right: 30px;
 		}
+	}
+
+	@include breakpoint(medium) {
+		width: $post-nav-size;
+		height: $post-nav-size;
+		@include vertical-align();
+		position: absolute;
+
+		> svg {
+			border-radius: 0;
+		}
+
+		&.next > svg { left: 0; }
+		&.previous > svg { right: 0; }
 	}
 
 	&:hover {

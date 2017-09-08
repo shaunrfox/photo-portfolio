@@ -17,7 +17,6 @@
 			</div>
 
 			<nav id="navigation">
-				<a href="{{ site.baseurl }}/" class="home-link {% if page.url == '/') %} active {% endif %}">Home</a>
 			  <a href="{{ site.baseurl }}/people" {% if (current[1] == 'people') %} class="active" {% endif %}>People</a>
 			  <a href="{{ site.baseurl }}/places" {% if (current[1] == 'places') %} class="active" {% endif %}>Places</a>
 			  <a href="{{ site.baseurl }}/scenes" {% if (current[1] == 'scenes') %} class="active" {% endif %}>Scenes</a>
@@ -26,10 +25,4 @@
 			</nav>
     </div>
   </div>
-</div>
-
-<div class="container">
-	<div class="column">
-		<div class="page-title-small-pages" {% if page.url == '/') %} style="display: none;" {% endif %}>{{ page.title }}</div>
-	</div>
 </div>

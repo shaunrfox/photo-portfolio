@@ -8,6 +8,11 @@ $footer-height: 50px;
 	line-height: $footer-height;
 	background: $off-white;
 
+	@include breakpoint(extra-large) {
+		height: 30px;
+		line-height: 30px;
+	}
+
 	&.fixed-footer {
 		background: rgba($white, .6);
 		position: fixed;
@@ -16,7 +21,7 @@ $footer-height: 50px;
 		bottom: 0;
 
 		.copyright {
-			color: $dark-grey;
+			color: $light-grey;
 		}
 	}
 
@@ -35,6 +40,6 @@ $footer-height: 50px;
 
 .copyright {
 	text-align: center;
-	@include font-size(1.4);
-	color: $mid-grey;
+	@include font-size(1.2);
+	color: $light-grey;
 }

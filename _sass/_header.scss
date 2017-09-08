@@ -79,8 +79,8 @@ $header-height: 50px;
 	}
 
 	@include breakpoint(medium) {
-		.logo { display: none; }
-		.actual-logo { display: block; }
+		// .logo { display: none; }
+		// .actual-logo { display: block; }
 	}
 }
 
@@ -102,10 +102,6 @@ nav {
 		border: none;
 		@include transition(200ms ease all);
 
-		&.home-link {
-			display: none;
-		}
-
 	 	&.active,
 		&:hover {
 			color: $cyan;
@@ -123,15 +119,17 @@ nav {
 		height: auto;
 		@include clearfix();
 		background: $white;
-		box-shadow: 0 2px 3px rgba($off-black, .4);
+		box-shadow: 0 0 0 rgba($off-black, 0);
 		z-index: 100;
 		margin-top: -5px;
-		border: 1px solid $off-white;
-		margin-right: -200px;
+		border: 0 solid transparent;
 		transition: ease all 300ms;
+		max-height: 0;
+		overflow: hidden;
 
 		&.nav-open {
-			margin-right: 0;
+			max-height: 250px;
+			box-shadow: 0 2px 3px rgba($off-black, .4);
 		}
 
 		a {
@@ -141,8 +139,13 @@ nav {
 			line-height: 40px;
 			padding: 0 15px;
 
+			&:hover {
+				background: rgba($cyan, .1);
+			}
+
 			&.active {
-				background: rgba($cyan, .3)
+				background: rgba($cyan, .3);
+				color: $off-black;
 			}
 		}
 	}
@@ -166,28 +169,25 @@ nav {
 	}
 }
 
-@include breakpoint(small) {
-	nav a.home-link {
-		display: block;
-	}
-}
-
 .page-title,
 .slash {
 	@include chaparral();
 	color: $mid-grey;
+	@include font-size(1.6);
 }
 
 .page-title-small-pages {
-	position: relative;
-	float: left;
+	position: absolute;
+	bottom: 30px; // footer height
+	left: 0;
+	right: 0;
 	color: $off-black;
-	padding: 10px;
-	margin-bottom: 10px;
-	background: rgba($white, .6);
+	padding: 10px 30px;
+	background: rgba($off-white, .8);
 	height: auto;
 	z-index: 10;
 	@include font-size(1.4);
+	text-align: center;
 	line-height: 1em;
 	display: none;
 }
