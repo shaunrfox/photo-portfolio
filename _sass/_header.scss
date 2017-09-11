@@ -9,6 +9,7 @@ $header-height: 50px;
 	left: 0;
 	height: auto;
 	padding: 0;
+	z-index: 10;
 	@include clearfix();
 	@include breakpoint(medium) { padding-bottom: 0;}
 
@@ -40,47 +41,6 @@ $header-height: 50px;
 			border: none;
 			color: $cyan;
 		}
-	}
-
-	.actual-logo {
-		position: relative;
-		float: left;
-		width: 40px;
-		height: 40px;
-		margin: 5px 10px 5px 0;
-		border: 1px solid transparent;
-		border-radius: 40px;
-		display: none;
-
-		img {
-			width: 100%;
-			height: 100%;
-		}
-
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			border-radius: 40px;
-			background: rgba($cyan, .1);
-			display: none;
-		}
-
-		&:hover {
-			border: 1px solid $cyan;
-
-			&:before {
-				display: block;
-			}
-		}
-	}
-
-	@include breakpoint(medium) {
-		// .logo { display: none; }
-		// .actual-logo { display: block; }
 	}
 }
 
@@ -146,24 +106,6 @@ nav {
 			&.active {
 				background: rgba($cyan, .3);
 				color: $off-black;
-			}
-		}
-	}
-
-	.site-header.home-header {
-		nav a {
-			color: $off-black;
-		}
-
-		.hamburger-menu {
-			svg {
-				fill: rgba($white, .8);
-			}
-
-			&.hamburger-clicked {
-				svg {
-					fill: $off-black;
-				}
 			}
 		}
 	}

@@ -10,7 +10,7 @@ Home Styles
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: -1;
+	z-index: 1;
 
 	.home-image {
 		position: absolute;
@@ -21,5 +21,35 @@ Home Styles
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
+	}
+}
+
+// Hide main nav on home page
+.site-header.home-header {
+	nav,
+	.hamburger-menu {
+		display: none;
+	}
+}
+
+.home-nav {
+	position: relative;
+	width: 90%;
+	max-width: 500px;
+	margin: 100px auto;
+	z-index: 100;
+
+	> a {
+		display: block;
+		text-align: center;
+		color: rgba($white, .7);
+		@include font-size(2.5);
+		@include uppercase();
+		margin-bottom: 20px;
+
+		&:hover {
+			border: none;
+			color: $white;
+		}
 	}
 }
