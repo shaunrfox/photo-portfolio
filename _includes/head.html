@@ -13,7 +13,8 @@
   <meta property="og:title" content="Portfolio of photographs by Shaun Fox"/>
   <meta property="og:url" content="http://shaunfoxphoto.com"/>
   <meta property="og:site_name" content="Shaun Fox Photos"/>
-  <meta property="og:type" content="portfolio"/>
+  <meta property="og:type" content="profile"/>
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index, follow">
