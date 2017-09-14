@@ -4,7 +4,7 @@ layout: default
 <div class="post">
 
   {% if page.next.url %}
-    <a href="{{ site.baseurl }}{{page.next.url}}" title="Previous: {{page.next.title}}" class="post-nav next">
+    <a href="{{ site.baseurl }}{{page.next.url}}" title="Previous: {{page.next.title}}" class="post-nav next" id="previousClick">
 			<svg viewBox="0 0 30 30" class="ico-pointer-left">
 				<use xlink:href="#ico-pointer-left"></use>
 			</svg>
@@ -12,7 +12,7 @@ layout: default
   {% endif %}
 
   {% if page.previous.url %}
-    <a href="{{ site.baseurl }}{{page.previous.url}}" title="Next: {{page.previous.title}}" class="post-nav previous">
+    <a href="{{ site.baseurl }}{{page.previous.url}}" title="Next: {{page.previous.title}}" class="post-nav previous" id="nextClick">
 			<svg viewBox="0 0 30 30" class="ico-pointer-right">
 				<use xlink:href="#ico-pointer-right"></use>
 			</svg>

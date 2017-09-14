@@ -13,3 +13,18 @@ $("#toggleNav").on("click", function() {
 	$("#navigation").toggleClass("nav-open");
 	$("#toggleNav").toggleClass("hamburger-clicked");
 });
+
+// Arrow through image pages
+$(document).keydown(function(e){
+  if (e.keyCode === 37) { // left arrow
+     // alert( "left pressed" );
+     $("#previousClick").get(0).click();
+     console.log("next-click");
+  } else if (e.keyCode === 39) { // right arrow
+     // alert( "right pressed" );
+     $("#nextClick").get(0).click();
+     console.log("previous-click");
+  } else {
+  	return;
+  }
+});
