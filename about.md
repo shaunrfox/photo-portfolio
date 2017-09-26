@@ -18,7 +18,7 @@ permalink: /about/
 
 		<hr>
 
-		<p>By day, I&rsquo;m a Senior Product Designer at <a href="http://www.shipstation.com/">ShipStation</a> in beautiful Austin, Texas.</p>
+		<p>By day, I&rsquo;m the Principal Product Designer at <a href="http://www.shipstation.com/">ShipStation</a> in beautiful Austin, Texas.</p>
 		<p>You can see more of my product and graphic design work at <a href="http://shaunfox.com">shaunfox.com</a>.</p>
 	</div>
 </div>
