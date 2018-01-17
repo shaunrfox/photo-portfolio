@@ -16,6 +16,8 @@ permalink: /about/
 		<p>You can <a href="https://shaunfox.typeform.com/to/yshc4b" target="_blank">get in touch with me here</a>.
 		</p>
 
+		<p>If you&rsquo;re interested in prints, I&rsquo;m trying out a new printing service where I have a few photos available for purchase in various sizes. <a href="https://shaunfox.darkroom.tech/" target="_blank">Check out the images here</a>.</p>
+
 		<hr>
 
 		<p>By day, I&rsquo;m the Principal Product Designer at <a href="http://www.shipstation.com/">ShipStation</a> in beautiful Austin, Texas.</p>
