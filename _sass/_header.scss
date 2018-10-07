@@ -16,10 +16,10 @@ $header-height: 50px;
 	&.home-header {
 		.logo,
 		nav a {
-			color: rgba($white, .8);
+			color: rgba($white, .5);
 
 			&:hover {
-				color: $cyan;
+				color: $white;
 			}
 		}
 	}
@@ -31,15 +31,15 @@ $header-height: 50px;
 	margin-right: 20px;
 	height: $header-height;
 	line-height: $header-height;
-	color: $off-black;
+	color: $off-white;
 
 	.logo {
-		color: $off-black;
+		color: $off-white;
 		transition: 300ms ease all;
 
 		&:hover {
 			border: none;
-			color: $cyan;
+			color: $white;
 		}
 	}
 }
@@ -56,7 +56,7 @@ nav {
 		margin-left: 20px;
 		height: $header-height;
 		line-height: $header-height;
-		color: $mid-grey;
+		color: rgba($white, .5);
 	 	@include uppercase();
 	 	@include font-size(1.4);
 		border: none;
@@ -64,7 +64,7 @@ nav {
 
 	 	&.active,
 		&:hover {
-			color: $cyan;
+			color: $white;
 			border-bottom: none;
 	 	}
  	}
@@ -78,7 +78,7 @@ nav {
 		width: 150px;
 		height: auto;
 		@include clearfix();
-		background: $white;
+		background: $black;
 		box-shadow: 0 0 0 rgba($off-black, 0);
 		z-index: 100;
 		margin-top: -5px;
@@ -99,13 +99,8 @@ nav {
 			line-height: 40px;
 			padding: 0 15px;
 
-			&:hover {
-				background: rgba($cyan, .1);
-			}
-
 			&.active {
-				background: rgba($cyan, .3);
-				color: $off-black;
+				color: $white;
 			}
 		}
 	}
@@ -120,12 +115,12 @@ nav {
 
 .page-title-small-pages {
 	position: absolute;
-	bottom: 30px; // footer height
+	bottom: 29px; // (almost) footer height
 	left: 0;
 	right: 0;
-	color: $off-black;
+	color: $off-white;
 	padding: 10px 30px;
-	background: rgba($off-white, .8);
+	background: rgba($off-black, .8);
 	height: auto;
 	z-index: 10;
 	@include font-size(1.4);
@@ -157,20 +152,19 @@ $hamburger-size: 40px;
 	svg {
 		width: $hamburger-size;
 		height: $hamburger-size;
-		fill: rgba($off-black, .7);
+		fill: rgba($white, .5);
 	}
 
 	&:hover {
 		cursor: pointer;
-		background: rgba($white, .3);
 
 		svg {
-			fill: $off-black;
+			fill: $white;
 		}
 	}
 
 	&.hamburger-clicked {
-		background: $white;
+		background: rgba($dark-grey, .3);
 	}
 
 	@include breakpoint(medium) {

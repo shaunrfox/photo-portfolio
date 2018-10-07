@@ -6,7 +6,6 @@ $footer-height: 50px;
 	width: 100%;
 	height: $footer-height;
 	line-height: $footer-height;
-	background: $off-white;
 	z-index: 10;
 
 	@include breakpoint(extra-large) {
@@ -15,14 +14,13 @@ $footer-height: 50px;
 	}
 
 	&.fixed-footer {
-		background: rgba($white, .6);
 		position: fixed;
 		left: 0;
 		right: 0;
 		bottom: 0;
 
 		.copyright {
-			color: $light-grey;
+			color: rgba($off-white, .6);
 		}
 	}
 
@@ -34,7 +32,7 @@ $footer-height: 50px;
 		background: none;
 
 		.copyright {
-			color: $off-black;
+			color: rgba($off-white, .6);
 		}
 	}
 }

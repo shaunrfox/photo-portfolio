@@ -10,7 +10,7 @@ Post Styles
 	right: 0;
 	bottom: $footer-height;
 	left: 0;
-	background: $off-white;
+	background: $off-black;
 
 	@include breakpoint(extra-large) {
 		bottom: 30px;
@@ -47,7 +47,7 @@ $post-nav-size: 40px;
 		width: $post-nav-size;
 		height: $post-nav-size;
 		fill: $off-black;
-		background: rgba($white, .6);
+		background: rgba($white, .2);
 		border-radius: $post-nav-size;
 		transition: ease all 300ms;
 	}
@@ -68,26 +68,33 @@ $post-nav-size: 40px;
 		}
 	}
 
-	@include breakpoint(medium) {
-		width: $post-nav-size;
-		height: $post-nav-size;
-		@include vertical-align();
-		position: absolute;
-
-		> svg {
-			border-radius: 0;
-		}
-
-		&.next > svg { left: 0; }
-		&.previous > svg { right: 0; }
-	}
-
 	&:hover {
 		border: none;
 
 		> svg {
-			background: $white;
-			fill: $cyan;
+			background: rgba($white, .5);
 		}
+	}
+
+	@include breakpoint(medium) {
+		@include vertical-align();
+		position: absolute;
+
+		> svg {
+			fill: rgba($white, .5);
+			background: none;
+		}
+
+		&:hover {
+			border: none;
+
+			> svg {
+				background: none;
+				fill: $white;
+			}
+		}
+
+		&.next > svg { left: 0; }
+		&.previous > svg { right: 0; }
 	}
 }

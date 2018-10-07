@@ -28,3 +28,11 @@ $(document).keydown(function(e){
   	return;
   }
 });
+
+$(document).ready(function() {
+  $(function() {
+    $(".rslides").responsiveSlides({
+      random: true
+    });
+  });
+});

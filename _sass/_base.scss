@@ -7,7 +7,7 @@
 html {
 	@include source-sans();
 	font-size: 62.5%;
-	color: $off-black;
+	color: $off-white;
 	width: 100%;
 	height: 100%;
 	display: block;
@@ -19,8 +19,7 @@ body {
 	padding: 0px;
 	width: 100%;
 	height: 100%;
-	background-color: $white;
-	// border-top: 3px solid $off-white;
+	background-color: $off-black;
 }
 
 h1, h2, h3 {
@@ -31,12 +30,12 @@ h1, h2, h3 {
 
 h1 {
 	@include font-size(3);
-	color: $off-black;
+	color: $off-white;
 	font-weight: 700;
 }
 h2 {
 	@include font-size(3);
-	color: $off-black;
+	color: $off-white;
 	font-weight: 700;
 }
 h3 { @include font-size(1.2); }
@@ -88,10 +87,6 @@ img {
 hr {
 	width: 100%;
 	border: none;
-	border-top: 1px solid $light-grey;
+	border-top: 1px solid $dark-grey;
 	margin: 30px 0;
 }
-
-.elFox { z-index: 400; }
-
-::selection { background: tint($cyan, 10); }
