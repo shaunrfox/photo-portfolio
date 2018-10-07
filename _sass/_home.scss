@@ -22,19 +22,30 @@ Home Styles
 }
 
 .home-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	position: relative;
 	width: 90%;
+	height: calc(100% - 200px);
 	max-width: 500px;
 	margin: 100px auto;
 	z-index: 100;
 
+	@include breakpoint(medium) {
+		height: calc(100% - 100px);
+		margin: 50px auto;
+	}
+
 	> a {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 20%;
 		text-align: center;
 		color: rgba($white, .7);
 		@include font-size(2.5);
 		@include uppercase();
-		margin-bottom: 20px;
 
 		&:hover {
 			border: none;
