@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="container about-page">
 	<div class="column pic">
-		<img src="{{ site.baseurl }}/assets/img/shaun-fox-2018.jpg" alt="Shaun Fox" class="bio-pic">
+		<img src="{{ site.baseurl }}/assets/img/shaun-fox-portrait-2018.jpg" alt="Shaun Fox" class="bio-pic">
 	</div>
 	<div class="column my-bio">
 		<p>Hi there, I&rsquo;m Shaun.</p>
