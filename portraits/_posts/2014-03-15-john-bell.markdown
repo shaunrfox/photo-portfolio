@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2014-03-15
+
+title: "John Bell in a cool hat in an airport hotel bar. Austin, Texas."
+base-path: "/assets/img/photos/portraits"
+image-name: "john-bell"
+---

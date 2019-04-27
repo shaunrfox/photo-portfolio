@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2014-04-20
+
+title: "My brother, Jeremy, on a cruise ship. Gulf of Mexico."
+base-path: "/assets/img/photos/portraits"
+image-name: "jeremy-fox-1"
+---

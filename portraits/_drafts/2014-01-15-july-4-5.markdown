@@ -1,9 +1,0 @@
----
-layout: post
-categories: photos
-date: 2014-01-15
-
-title: "Children after the fourth of July Parade, Austin, Texas"
-base-path: "/assets/img/photos/scenes"
-image-name: "july-4-5"
----

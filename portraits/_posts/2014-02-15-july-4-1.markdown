@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2014-02-15
+
+title: "Luisa waiting for Independence Day fireworks. Austin, Texas."
+base-path: "/assets/img/photos/portraits"
+image-name: "july-4-1"
+---
