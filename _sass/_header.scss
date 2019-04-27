@@ -4,6 +4,10 @@ $header-height: 70px;
 
 .nav-column {
 	padding: 0 30px;
+
+	@include breakpoint(medium-step) {
+		padding: 0 15px;
+	}
 }
 
 .site-header {
@@ -76,32 +80,34 @@ nav {
 
 @include breakpoint(medium) {
 	nav {
-		position: absolute;
-		top: $header-height;
-		right: 30px;
-		width: 150px;
-		height: auto;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
 		@include clearfix();
-		background: $black;
-		box-shadow: 0 0 0 rgba($off-black, 0);
+		background: rgba($black, .9);
 		z-index: 100;
-		margin-top: -5px;
 		border: 0 solid transparent;
 		transition: ease all 300ms;
 		max-height: 0;
 		overflow: hidden;
 
 		&.nav-open {
-			max-height: 250px;
-			box-shadow: 0 2px 3px rgba($off-black, .4);
+			max-height: 100%;
 		}
 
 		a {
-			width: 100%;
-			height: 40px;
-			margin: 0;
-			line-height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 80%;
+			height: percentage(1/5);
+			margin: 0 auto;
+			float: none;
+			font-size: 24px;
 			padding: 0 15px;
+			text-align: center;
 
 			&.active {
 				color: $white;
@@ -149,7 +155,7 @@ $hamburger-size: 40px;
 	float: right;
 	width: $hamburger-size;
 	height: $hamburger-size;
-	margin: 5px 0;
+	margin: 15px 0;
 	display: none;
 	z-index: 100;
 
@@ -167,11 +173,36 @@ $hamburger-size: 40px;
 		}
 	}
 
-	&.hamburger-clicked {
-		background: rgba($dark-grey, .3);
+	&.hamburger-hidden {
+		display: none;
 	}
 
 	@include breakpoint(medium) {
+		display: block;
+	}
+}
+
+.close-menu {
+	display: none;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 200;
+	fill: rgba($white, .8);
+	width: 60px;
+	height: 60px;
+
+	> svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	&:hover {
+		fill: $white;
+		cursor: pointer;
+	}
+
+	&.close-shown {
 		display: block;
 	}
 }

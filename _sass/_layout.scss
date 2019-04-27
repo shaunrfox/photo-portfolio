@@ -69,12 +69,20 @@
 
 .gallery-wrapper {
 	margin-top: -20px;
+
+	@include breakpoint(medium-step) {
+		margin-top: -5px;
+	}
 }
 
 .grid {
 	width: 100%;
 	@include clearfix();
 	padding-bottom: 50px;
+
+	@include breakpoint(medium-step) {
+
+	}
 
 	.gallery-photo {
 		position: relative;
@@ -83,6 +91,10 @@
 		width: percentage(1/3);
 		height: auto;
 		padding: 20px;
+
+		@include breakpoint(medium-step) {
+			padding: 5px;
+		}
 
 		img {
 			width: 100%;

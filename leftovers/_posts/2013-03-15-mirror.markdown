@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-03-15
+
+title: "Driving self portrait. Austin, Texas."
+base-path: "/assets/img/photos/leftovers"
+image-name: "mirror"
+---

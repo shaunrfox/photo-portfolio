@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-02-03
+
+title: "Pink hibiscus in the dark. Austin, Texas."
+base-path: "/assets/img/photos/leftovers"
+image-name: "hibiscus-2"
+---

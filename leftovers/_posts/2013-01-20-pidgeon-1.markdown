@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-01-20
+
+title: "Pidgeon portrait. Austin, Texas."
+base-path: "/assets/img/photos/leftovers"
+image-name: "pidgeon-1"
+---

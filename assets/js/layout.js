@@ -9,9 +9,16 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry('layout');
 });
 
-$("#toggleNav").on("click", function() {
+$("#openMenu").on("click", function() {
 	$("#navigation").toggleClass("nav-open");
-	$("#toggleNav").toggleClass("hamburger-clicked");
+	$("#openMenu").addClass("hamburger-hidden");
+  $("#closeMenu").addClass("close-shown");
+});
+
+$("#closeMenu").on("click", function() {
+  $("#navigation").toggleClass("nav-open");
+  $("#openMenu").removeClass("hamburger-hidden");
+  $("#closeMenu").removeClass("close-shown");
 });
 
 // Arrow through image pages

@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2013-03-20
+
+title: "Texas playground reader. Lubbock, Texas."
+base-path: "/assets/img/photos/leftovers"
+image-name: "hiding-2"
+---
