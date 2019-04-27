@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2016-01-01
+
+title: "View of my Grandpa's garage. Giddings, Texas."
+base-path: "/assets/img/photos/texas"
+image-name: "fox-farm-2"
+---

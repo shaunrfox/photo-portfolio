@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2016-04-25
+
+title: "Paddle boat on the Frio River at Laity Lodge. Near Leakey, Texas."
+base-path: "/assets/img/photos/texas"
+image-name: "frio-boat"
+---

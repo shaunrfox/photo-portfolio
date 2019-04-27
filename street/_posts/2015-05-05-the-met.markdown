@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-05-05
+
+title: "The Met. New York City, New York."
+base-path: "/assets/img/photos/street"
+image-name: "the-met"
+---

@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2016-01-15
+
+title: "Entrance to Mi Tierra restaurant. San Antonio, Texas."
+base-path: "/assets/img/photos/texas"
+image-name: "mi-tierra"
+---

@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2016-02-25
+
+title: "Clouds and mountains. Big Bend National Park, Texas."
+base-path: "/assets/img/photos/texas"
+image-name: "big-bend-1"
+---

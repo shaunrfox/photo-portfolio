@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-03-15
+
+title: "Loading boxes in Akihabara. Tokyo, Japan."
+base-path: "/assets/img/photos/street"
+image-name: "box-cart"
+---

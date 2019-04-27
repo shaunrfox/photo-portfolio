@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2016-03-01
+
+title: "Chatting in the shade. Giddings, Texas."
+base-path: "/assets/img/photos/texas"
+image-name: "fox-farm-1"
+---

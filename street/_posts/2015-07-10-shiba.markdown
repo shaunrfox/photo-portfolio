@@ -1,0 +1,9 @@
+---
+layout: post
+categories: photos
+date: 2015-07-10
+
+title: "Shiba. Tokyo, Japan."
+base-path: "/assets/img/photos/street"
+image-name: "shiba"
+---
