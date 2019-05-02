@@ -3,7 +3,7 @@ layout: post
 categories: photos
 date: 2015-06-30
 
-title: "Street photography. New York City, New York."
+title: "New York City, New York."
 base-path: "/assets/img/photos/street"
 image-name: "nyc-ped-4"
 ---
