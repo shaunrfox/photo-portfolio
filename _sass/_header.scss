@@ -79,18 +79,22 @@ nav {
 		position: fixed;
 		top: 0;
 		right: 0;
+		bottom: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
 		@include clearfix();
 		background: rgba($black, .9);
 		z-index: 100;
+		opacity: 0;
 		border: 0 solid transparent;
-		transition: ease all 300ms;
-		max-height: 0;
+		transition: ease all 400ms;
 		overflow: hidden;
+		transform: translateY(-100%);
 
 		&.nav-open {
-			max-height: 100%;
+			opacity: 1;
+			transform: translateY(0);
 		}
 
 		a {
@@ -182,7 +186,7 @@ $hamburger-size: 40px;
 	display: none;
 	position: fixed;
 	top: 5px;
-	right: 5px;
+	right: 15px;
 	z-index: 200;
 	fill: rgba($white, .8);
 	width: 60px;
