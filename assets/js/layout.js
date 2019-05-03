@@ -13,12 +13,14 @@ $("#openMenu").on("click", function() {
 	$("#navigation").toggleClass("nav-open");
 	$("#openMenu").addClass("hamburger-hidden");
   $("#closeMenu").addClass("close-shown");
+  $(".post-nav").hide();
 });
 
 $("#closeMenu").on("click", function() {
   $("#navigation").toggleClass("nav-open");
   $("#openMenu").removeClass("hamburger-hidden");
   $("#closeMenu").removeClass("close-shown");
+  $(".post-nav").show();
 });
 
 // Arrow through image pages

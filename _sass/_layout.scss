@@ -49,14 +49,14 @@
 	position: relative;
 	display: block;
 	width: 100%;
-	max-width: 1600px;
+	max-width: 1900px;
 	height: auto;
 	margin: 0 auto;
 	@include clearfix();
 	padding: 0 15px;
 
 	&.photos {
-		padding: 0 25px;
+		padding: 0;
 	}
 }
 
@@ -67,22 +67,10 @@
 	@include clearfix();
 }
 
-.gallery-wrapper {
-	margin-top: -20px;
-
-	@include breakpoint(medium-step) {
-		margin-top: -5px;
-	}
-}
-
 .grid {
 	width: 100%;
 	@include clearfix();
 	padding-bottom: 50px;
-
-	@include breakpoint(medium-step) {
-
-	}
 
 	.gallery-photo {
 		position: relative;
@@ -90,11 +78,7 @@
 		float: left;
 		width: percentage(1/3);
 		height: auto;
-		padding: 20px;
-
-		@include breakpoint(medium-step) {
-			padding: 5px;
-		}
+		padding: 0;
 
 		img {
 			width: 100%;
@@ -137,19 +121,12 @@
 		&:before {
 			content: "";
 			position: absolute;
-			top: 20px;
-			right: 20px;
-			bottom: 20px;
-			left: 20px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
 			background: rgba($off-black, 0);
 			transition: 300ms ease all;
-
-			@include breakpoint(medium-step) {
-				top: 5px;
-				right: 5px;
-				bottom: 5px;
-				left: 5px;
-			}
 		}
 
 		&:hover {
