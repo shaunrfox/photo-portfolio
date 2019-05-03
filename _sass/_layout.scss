@@ -114,7 +114,7 @@
 			width: 50%;
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint(medium-step) {
 			width: 100%;
 		}
 
