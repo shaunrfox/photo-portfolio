@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="container about-page">
 	<div class="column pic">
-		<img src="{{ site.baseurl }}/assets/img/shaun-fox-portrait-2018.jpg" alt="Shaun Fox" class="bio-pic">
+		<img src="{{ site.baseurl }}/assets/img/shaun-fox-photo-2022.jpg" alt="Shaun Fox" class="bio-pic">
 	</div>
 	<div class="column my-bio">
 		<p>Hi there, I&rsquo;m Shaun.</p>
@@ -16,11 +16,9 @@ permalink: /about/
 		<p>You can <a href="https://shaunfox.typeform.com/to/yshc4b" target="_blank">get in touch with me here</a>.
 		</p>
 
-		<p>If you&rsquo;re interested in prints, I&rsquo;m trying out a new printing service where I have a few photos available for purchase in various sizes. <a href="https://shaunfox.darkroom.tech/" target="_blank">Check out the images here</a>.</p>
-
 		<hr>
 
-		<p>By day, I&rsquo;m a Senior Design Technologist at Indeed in beautiful Austin, Texas.</p>
-		<p>You can see more of my product and graphic design work at <a href="http://shaunfox.com">shaunfox.com</a>.</p>
+		<p>By day, I lead a UX team at Indeed in beautiful Austin, Texas.</p>
+		<p>You can see more of my product and design work at <a href="http://shaunfox.com">shaunfox.com</a>.</p>
 	</div>
 </div>
