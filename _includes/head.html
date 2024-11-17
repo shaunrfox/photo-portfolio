@@ -13,7 +13,10 @@
     content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
   />
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
+  <link
+    rel="stylesheet"
+    href="{{{ site.url }}{{ site.baseurl }}/css/main.css"
+  />
 
   <meta
     property="og:image"
@@ -33,20 +36,20 @@
 
   <link
     rel="icon"
-    href="{{ site.baseurl }}/assets/img/favicon.ico"
+    href="{{{ site.url }}{{ site.baseurl }}/assets/img/favicon.ico"
     type="image/x-icon"
   />
   <link
     rel="shortcut icon"
-    href="{{ site.baseurl }}/assets/img/favicon.ico"
+    href="{{{ site.url }}{{ site.baseurl }}/assets/img/favicon.ico"
     type="image/x-icon"
   />
 
   <!-- jQuery -->
-  <script src="{{ site.baseurl }}/assets/js/jquery-2.0.3.min.js"></script>
+  <script src="{{{ site.url }}{{ site.baseurl }}/assets/js/jquery-2.0.3.min.js"></script>
 
   <!-- Responsive Slides -->
-  <script src="{{ site.baseurl }}/assets/js/responsiveslides.min.js"></script>
+  <script src="{{{ site.url }}{{ site.baseurl }}/assets/js/responsiveslides.min.js"></script>
 
   <!-- Typekit -->
   <script src="https://use.typekit.net/qqw5isi.js"></script>
