@@ -1,34 +1,54 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>
+    {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape
+    }}{% endif %}
+  </title>
 
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta
+    name="description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+  />
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="/css/main.css" />
 
-  <meta property="og:image" content="http://shaunfoxphoto.com/assets/img/photos/scenes/tracy-ca-truck.jpg"/>
-  <meta property="og:title" content="Portfolio of photographs by Shaun Fox"/>
-  <meta property="og:url" content="http://shaunfoxphoto.com"/>
-  <meta property="og:site_name" content="Shaun Fox Photos"/>
-  <meta property="og:type" content="profile"/>
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+  <meta
+    property="og:image"
+    content="/assets/img/photos/scenes/tracy-ca-truck.jpg"
+  />
+  <meta property="og:title" content="Portfolio of photographs by Shaun Fox" />
+  <meta property="og:url" content="http://shaunfoxphoto.com" />
+  <meta property="og:site_name" content="Shaun Fox Photos" />
+  <meta property="og:type" content="profile" />
+  <meta
+    property="og:description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+  />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
 
-  <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+  <link
+    rel="shortcut icon"
+    href="/assets/img/favicon.ico"
+    type="image/x-icon"
+  />
 
   <!-- jQuery -->
-	<script src="{{ site.baseurl }}/assets/js/jquery-2.0.3.min.js"></script>
+  <script src="/assets/js/jquery-2.0.3.min.js"></script>
 
   <!-- Responsive Slides -->
-  <script src="{{ site.baseurl }}/assets/js/responsiveslides.min.js"></script>
+  <script src="/assets/js/responsiveslides.min.js"></script>
 
   <!-- Typekit -->
   <script src="https://use.typekit.net/qqw5isi.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script>
+    try {
+      Typekit.load({ async: true });
+    } catch (e) {}
+  </script>
 </head>

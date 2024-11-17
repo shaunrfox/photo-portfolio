@@ -1,17 +1,21 @@
 {% assign current = page.url | downcase | split: '/' %}
 
-<footer class="site-footer {% if (current[2] == 'photos') %} fixed-footer {% endif %} {% if page.url == '/') %} home-footer {% endif %}">
-
+<footer
+  class="site-footer {% if (current[2] == 'photos') %} fixed-footer {% endif %} {% if page.url == '/') %} home-footer {% endif %}"
+>
   <div class="container">
-  	<div class="column">
-  		<div class="copyright">
-				All content &copy; Copyright <script>document.write(new Date().getFullYear())</script>, Shaun Fox
-		  </div>
-  	</div>
+    <div class="column">
+      <div class="copyright">
+        All content &copy; Copyright
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        , Shaun Fox
+      </div>
+    </div>
   </div>
 
-  <script src="{{ site.baseurl }}/assets/js/masonry.pkgd.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/imagesloaded.pkgd.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/layout.js"></script>
-
+  <script src="/assets/js/masonry.pkgd.min.js"></script>
+  <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/js/layout.js"></script>
 </footer>
