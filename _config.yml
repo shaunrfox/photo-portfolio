@@ -9,8 +9,8 @@
 title: Shaun Fox Photos
 description: > # this means to ignore newlines until "baseurl:"
   Hi, I'm Shaun. This is a portfolio of some of my favorite photos.
-baseurl: "https://okshaun.com/photo-portfolio/" # the subpath of your site, e.g. /blog
-url: "https://shaunfoxphoto.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://okshaun.com/photo-portfolio" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
