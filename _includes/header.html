@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="column nav-column">
 			<div class="main-title">
-				<a href="/" class="logo">{{ site.title }}</a>
+				<a href="{{ site.url }}{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
 				{% if page.title %}<span class="slash"> /</span>{% endif %}
 				{% if page.title %}<span class="page-title"> {{ page.title }}</span>{% endif %}
 			</div>
@@ -22,11 +22,11 @@
 			</div>
 
 			<nav id="navigation">
-			  <a href="/texas" {% if (current[1] == 'texas') %} class="active" {% endif %}>Texas</a>
-			  <a href="/street" {% if (current[1] == 'street') %} class="active" {% endif %}>Street</a>
-			  <a href="/portraits" {% if (current[1] == 'portraits') %} class="active" {% endif %}>Portraits</a>
-			  <a href="/leftovers" {% if (current[1] == 'leftovers') %} class="active" {% endif %}>Leftovers</a>
-			  <a href="/about" {% if (current[1] == 'about') %} class="active" {% endif %}>About</a>
+			  <a href="{{ site.url }}{{ site.baseurl }}/texas" {% if (current[1] == 'texas') %} class="active" {% endif %}>Texas</a>
+			  <a href="{{ site.url }}{{ site.baseurl }}/street" {% if (current[1] == 'street') %} class="active" {% endif %}>Street</a>
+			  <a href="{{ site.url }}{{ site.baseurl }}/portraits" {% if (current[1] == 'portraits') %} class="active" {% endif %}>Portraits</a>
+			  <a href="{{ site.url }}{{ site.baseurl }}/leftovers" {% if (current[1] == 'leftovers') %} class="active" {% endif %}>Leftovers</a>
+			  <a href="{{ site.url }}{{ site.baseurl }}/about" {% if (current[1] == 'about') %} class="active" {% endif %}>About</a>
 			</nav>
     </div>
   </div>
