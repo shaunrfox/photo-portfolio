@@ -17,10 +17,10 @@
 
   <meta
     property="og:image"
-    content="http://shaunfoxphoto.com/assets/img/photos/scenes/tracy-ca-truck.jpg"
+    content="{{ site.url }}{{ site.baseurl }}/assets/img/photos/scenes/tracy-ca-truck.jpg"
   />
   <meta property="og:title" content="Portfolio of photographs by Shaun Fox" />
-  <meta property="og:url" content="http://shaunfoxphoto.com" />
+  <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:site_name" content="Shaun Fox Photos" />
   <meta property="og:type" content="profile" />
   <meta
@@ -47,12 +47,4 @@
 
   <!-- Responsive Slides -->
   <script src="{{ site.url }}{{ site.baseurl }}/assets/js/responsiveslides.min.js"></script>
-
-  <!-- Typekit -->
-  <script src="https://use.typekit.net/qqw5isi.js"></script>
-  <script>
-    try {
-      Typekit.load({ async: true });
-    } catch (e) {}
-  </script>
 </head>
